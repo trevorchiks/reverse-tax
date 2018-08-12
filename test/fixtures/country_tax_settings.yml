@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  country: one
+  currency: one
+  start_month: 1
+
+two:
+  country: two
+  currency: two
+  start_month: 1
