@@ -38,6 +38,8 @@ config/master.key
 *.bowerrc
 bower.json
 
+.idea/
+
 # Ignore pow environment settings
 .powenv
 
