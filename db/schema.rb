@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180812193604) do
+ActiveRecord::Schema.define(version: 20180822212401) do
 
   create_table "countries", force: :cascade do |t|
     t.string "code", limit: 5
@@ -38,6 +38,14 @@ ActiveRecord::Schema.define(version: 20180812193604) do
     t.datetime "updated_at", null: false
     t.index ["code"], name: "index_currencies_on_code", unique: true
     t.index ["symbol"], name: "index_currencies_on_symbol", unique: true
+  end
+
+  create_table "income_frequencies", force: :cascade do |t|
+    t.string "name"
+    t.integer "count_per_year"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["name"], name: "index_income_frequencies_on_name", unique: true
   end
 
   create_table "tax_year_details", force: :cascade do |t|
